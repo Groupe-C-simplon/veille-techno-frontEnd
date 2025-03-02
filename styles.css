@@ -1,0 +1,361 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+/* Reset + Général */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #1a1a2e;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+a {
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 100px 20px;
+    text-align: center;
+    border-bottom: 5px solid #00d4ff;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Sections */
+.section {
+    padding: 50px 20px;
+    margin: 30px auto;
+    background: #222;
+    border-radius: 12px;
+    max-width: 1100px;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(#6a11cb, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Tech cards */
+.technos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.tech-card {
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.tech-card:hover {
+    transform: scale(1.1);
+}
+
+.html-card { background-color: #f06529; }
+.css-card { background-color: #2965f1; }
+.js-card { background-color: #f7df1e; }
+
+/* Exemples interactifs */
+.examples {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.example-card {
+    padding: 20px;
+    background: #333;
+    border-radius: 12px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+    transition: transform 0.3s;
+}
+
+.example-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Bouton interactif */
+.color-change-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #00d4ff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.color-change-btn:hover {
+    background: #6a11cb;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Footer */
+footer {
+    background: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    border-top: 3px solid #00d4ff;
+    margin-top: 50px;
+    box-shadow: 0 -5px 15px rgba(0, 212, 255, 0.3);
+}
+
+footer p {
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+.section #html {
+    background: #f06529;
+}
+.section #css {
+    background: #2965f1;
+}
+
+.code-examples {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.code-block {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Courier New', monospace;
+}
+
+.code-block h3 {
+    color: #4dabf7;
+    text-align: center;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+}
+/* Conteneur des outils */
+.tools-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Cartes */
+.tool-card {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: scale(1.05);
+}
+
+/* Images des outils */
+.tool-card img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    background: white;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+
+/* Liste des extensions */
+.extensions-list {
+    background: #f8f8f8;
+    padding: 15px;
+    border-left: 5px solid #4facfe;
+    border-radius: 5px;
+    list-style: none;
+    color: black;
+}
+
+.extensions-list li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+/* Conteneur des frameworks */
+.frameworks-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Cartes */
+.framework-card {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.framework-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Images des frameworks */
+.framework-card img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    background: white;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+
+/* Tableau stylisé */
+.frameworks-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.frameworks-table th, .frameworks-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.frameworks-table th {
+    background-color: #4facfe;
+    color: white;
+}
+
+.frameworks-table tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+#vue {
+    color: black;
+}
+/* Conteneur des ressources */
+.ressources-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Cartes de ressources */
+.ressource-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: black;
+}
+
+.ressource-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Images */
+.ressource-card img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    background: #0073e6;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #005bb5;
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découverte du Frontend</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="icon.png">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>✨ Découvrez le Frontend</h1>
+            <p>La magie visuelle du web, là où le design rencontre l'interaction.</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Introduction -->
+        <section class="section">
+            <h2>🌟 Définition du Frontend</h2>
+            <p>
+                Le <strong>Front-End</strong> (ou développement frontal) désigne la partie d'un site ou d'une application que l'utilisateur voit et avec laquelle il interagit directement. C'est tout ce qui s'affiche à l'écran : les boutons, les menus, les images, les animations, les couleurs...
+
+En gros, si tu ouvres un site web, tout ce que tu peux voir et manipuler — cliquer sur un bouton, faire défiler une page, remplir un formulaire — fait partie du <strong>Front-End</strong>.
+            </p>
+            <p>
+                Les technologies principales utilisées pour créer le front-end sont :
+
+<ul>
+    <li> <mark id="html"><strong>HTML</strong></mark> (pour la structure : les titres, paragraphes, images...)</li>
+    <li> <mark id="css"><strong>CSS</strong></mark> (pour le style : couleurs, polices, marges...)</li>
+    <li> <mark><strong>JavaScript</strong></mark> (pour l'interactivité : animations, boutons cliquables...)</li>
+</ul>
+Le but du front-end, c’est de rendre un site <strong>joli, fonctionnel</strong> et <strong>facile à utiliser</strong> pour tout le monde. ✨
+            </p>
+            <div class="technos">
+                <div class="tech-card html-card">HTML<br><span>Structure le contenu</span></div>
+                <div class="tech-card css-card">CSS<br><span>Donne du style</span></div>
+                <div class="tech-card js-card">JavaScript<br><span>Rend le site interactif</span></div>
+            </div>
+        </section>
+
+        <!-- Exemples interactifs -->
+        <section class="section">
+            <h2>⚡ Exemples interactifs</h2>
+            <div class="examples">
+                <div class="example-card">
+                    <h3>Carte de visite (HTML)</h3>
+                    <div class="card">
+                        <h4>Lydie Ouattara</h4>
+                        <p>Développeur Web</p>
+                        <p>📧 lydieouattara828@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <h3>Bouton interactif (CSS)</h3>
+                    <button class="color-change-btn">Passe la souris ici !</button>
+                </div>
+
+                <div class="example-card">
+                    <h3>Compteur (JavaScript)</h3>
+                    <div class="counter">
+                        <button onclick="decrement()">-</button>
+                        <span id="count">0</span>
+                        <button onclick="increment()">+</button>
+                    </div>
+                </div>
+            </div>
+                    <!-- Blocs de code HTML, CSS et JavaScript -->
+        <div class="code-examples">
+            <div class="code-block">
+                <h3>📄 HTML</h3>
+                <h3>Le squelette du site</h3>
+                <pre>
+&lt;div class="card"&gt;
+    &lt;h4&gt;Lydie Ouattara&lt;/h4&gt;
+    &lt;p&gt;Développeur Web&lt;/p&gt;
+    &lt;p&gt;📧 lydieouattara828@gmail.com&lt;/p&gt;
+&lt;/div&gt;
+                </pre>
+            </div>
+
+            <div class="code-block">
+                <h3>🎨 CSS</h3>
+                <h3>Le style du site</h3>
+                <pre>
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+                </pre>
+            </div>
+
+            <div class="code-block">
+                <h3>⚡ JavaScript</h3>
+                <h3>Le script du site</h3>
+                <pre>
+function increment() {
+    let count = document.getElementById("count");
+    count.innerText = parseInt(count.innerText) + 1;
+}
+
+function decrement() {
+    let count = document.getElementById("count");
+    count.innerText = parseInt(count.innerText) - 1;
+}
+                </pre>
+            </div>
+        </div>
+
+        </section>
+
+        <section class="section outils">
+            <h2>🧰 Les outils du développeur</h2>
+        
+            <div class="tools-container">
+                <!-- Navigateur : Chrome -->
+                <div class="tool-card">
+                    <img src="chrome.png" alt="Chrome">
+                    <h3>Google Chrome</h3>
+                    <p>Rapide et optimisé avec des outils pour développeurs.</p>
+                    <a href="https://www.google.com/chrome/" target="_blank" class="btn">Télécharger</a>
+                </div>
+        
+                <!-- Navigateur : Firefox -->
+                <div class="tool-card">
+                    <img src="Firefox.png" alt="Firefox">
+                    <h3>Mozilla Firefox</h3>
+                    <p>Sécurisé et personnalisable, avec des DevTools avancés.</p>
+                    <a href="https://www.mozilla.org/fr/firefox/new/" target="_blank" class="btn">Télécharger</a>
+                </div>
+            </div>
+        
+            <h3>💻 Éditeurs de code</h3>
+            <div class="tools-container">
+                <!-- VS Code -->
+                <div class="tool-card">
+                    <img src="vscode.png" alt="VS Code">
+                    <h3>VS Code</h3>
+                    <p>Léger et puissant avec de nombreuses extensions.</p>
+                    <a href="https://code.visualstudio.com/" target="_blank" class="btn">Télécharger</a>
+                </div>
+        
+                <!-- Sublime Text -->
+                <div class="tool-card">
+                    <img src="sublime.png" alt="Sublime Text">
+                    <h3>Sublime Text</h3>
+                    <p>Rapide et minimaliste.</p>
+                    <a href="https://www.sublimetext.com/" target="_blank" class="btn">Télécharger</a>
+                </div>
+            </div>
+        
+            <h3>🛠️ Extensions utiles pour VS Code</h3>
+            <ul class="extensions-list">
+                <li>✅ <strong>Live Server :</strong> Recharge la page automatiquement.</li>
+                <li>🎨 <strong>Prettier :</strong> Formate automatiquement le code.</li>
+                <li>⚡ <strong>Emmet :</strong> Raccourcis pour écrire du code plus vite.</li>
+            </ul>
+        </section>
+        
+        
+
+        <section class="section frameworks">
+            <h2>🚀 Introduction aux frameworks</h2>
+            <p>Les frameworks JavaScript facilitent le développement d'interfaces modernes et interactives.</p>
+        
+            <div class="frameworks-container">
+                <!-- React -->
+                <div class="framework-card">
+                    <img src="react.webp" alt="React">
+                    <h3>React</h3>
+                    <p>Crée des interfaces dynamiques avec un rendu rapide.</p>
+                    <a href="https://react.dev/" target="_blank" class="btn">Découvrir</a>
+                </div>
+        
+                <!-- Vue.js -->
+                <div class="framework-card">
+                    <img src="vue.png" alt="Vue.js">
+                    <h3>Vue.js</h3>
+                    <p>Simple et flexible, idéal pour démarrer rapidement.</p>
+                    <a href="https://vuejs.org/" target="_blank" class="btn">Découvrir</a>
+                </div>
+        
+                <!-- Angular -->
+                <div class="framework-card">
+                    <img src="angular.png" alt="Angular">
+                    <h3>Angular</h3>
+                    <p>Un framework puissant et complet pour grandes applications.</p>
+                    <a href="https://angular.io/" target="_blank" class="btn">Découvrir</a>
+                </div>
+            </div>
+        
+            <h3>📊 Comparaison des frameworks</h3>
+            <table class="frameworks-table">
+                <thead>
+                    <tr>
+                        <th>Framework</th>
+                        <th>Performance</th>
+                        <th>Facilité d’apprentissage</th>
+                        <th>Utilisation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>React</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                        <td>Interfaces dynamiques</td>
+                    </tr>
+                    <tr id="vue">
+                        <td>Vue.js</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>Projets rapides et flexibles</td>
+                    </tr>
+                    <tr>
+                        <td>Angular</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>⭐⭐</td>
+                        <td>Applications complexes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+
+<!-- Ressources -->
+<section class="section ressources">
+    <h2>📚 Ressources pour aller plus loin</h2>
+    <p>Explore ces plateformes pour approfondir tes connaissances en développement web.</p>
+
+    <div class="ressources-container">
+        <div class="ressource-card">
+            <img src="mdn.png" alt="MDN Web Docs">
+            <h3>MDN Web Docs</h3>
+            <p>La documentation officielle pour HTML, CSS et JavaScript.</p>
+            <a href="https://developer.mozilla.org/fr/" target="_blank" class="btn">Découvrir</a>
+        </div>
+
+        <div class="ressource-card">
+            <img src="freecodecamp.png" alt="FreeCodeCamp">
+            <h3>FreeCodeCamp</h3>
+            <p>Apprends le développement web gratuitement avec des projets.</p>
+            <a href="https://www.freecodecamp.org/" target="_blank" class="btn">Découvrir</a>
+        </div>
+
+        <div class="ressource-card">
+            <img src="codecademy.jpg" alt="Codecademy">
+            <h3>Codecademy</h3>
+            <p>Des cours interactifs pour apprendre le code efficacement.</p>
+            <a href="https://www.codecademy.com/" target="_blank" class="btn">Découvrir</a>
+        </div>
+
+        <div class="ressource-card">
+            <img src="theodinproject.png" alt="The Odin Project">
+            <h3>The Odin Project</h3>
+            <p>Un parcours complet pour apprendre le développement web.</p>
+            <a href="https://www.theodinproject.com/" target="_blank" class="btn">Découvrir</a>
+        </div>
+
+        <div class="ressource-card">
+            <img src="W3schools.png" alt="W3Schools">
+            <h3>W3Schools</h3>
+            <p>Des tutoriels et exercices interactifs pour tous les niveaux.</p>
+            <a href="https://www.w3schools.com/" target="_blank" class="btn">Découvrir</a>
+        </div>
+
+        <div class="ressource-card">
+            <img src="roadmap.png" alt="Frontend Roadmap">
+            <h3>Frontend Roadmap</h3>
+            <p>Un guide visuel pour apprendre le front-end étape par étape.</p>
+            <a href="https://roadmap.sh/frontend" target="_blank" class="btn">Découvrir</a>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <footer>
+        <p>2025 | Simplon p6 | Groupe C</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
